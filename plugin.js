@@ -165,7 +165,7 @@ function SnowCanvas({ prefs, scene }) {
     let flakes = []
     let santaX = -220, santaY = 90, santaDir = 1, t = 0
     // trees (dx: offset from an edge); oops crash state
-    const trees = [{ dx: 52, h: 100 }, { dx: -70, h: 125 }]
+    const trees = [{ dx: 52, h: 100 }, { dx: 132, h: 125 }]
     let flames = [], plunge = false, pile = null, lastFire = 0
 
     const resize = () => {
@@ -360,7 +360,7 @@ function Overlay() {
     const dpr = Math.min(window.devicePixelRatio || 1, 2)
     let W = window.innerWidth, H = window.innerHeight, raf, t = 0
     let flakes = [], santaX = -220, santaY = 90, santaDir = 1, flames = []
-    const trees = [{ dx: 52, h: 100 }, { dx: -70, h: 125 }]
+    const trees = [{ dx: 52, h: 100 }, { dx: 132, h: 125 }]
     let plunge = false, pile = null, lastFire = 0
     const resize = () => {
       W = window.innerWidth; H = window.innerHeight
